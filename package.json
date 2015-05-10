@@ -1,0 +1,25 @@
+{
+  "name": "spiral-rectangle",
+  "version": "0.0.1",
+  "description": "generate a rectangle spiral",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rogerz/spiral-rectangle.git"
+  },
+  "keywords": [
+    "spiral"
+  ],
+  "author": "rogerz <rogerz.zhang@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rogerz/spiral-rectangle/issues"
+  },
+  "homepage": "https://github.com/rogerz/spiral-rectangle"
+}
