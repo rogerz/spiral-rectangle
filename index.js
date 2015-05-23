@@ -19,23 +19,25 @@ The curious formula is similar to finding the triangular root, but modified to t
  */
 
 function SpiralRectangle(width, height, step) {
-	var dx = step,
-		dy = dx * height / width,
-		x = 0,
-		y = 0;
-	return function (t) {
-		var sign = t < 0 ? -1 : 1;
-		switch ((Math.sqrt(1 + 4 * sign * t) - sign) & 3) {
+	var dx = step, dy = dx * height / width;
+	var x = 0, y = 0;
+	var	t = 0;
+	return function (reset) {
+		if (reset) {
+			x = 0;
+			y = 0;
+			t = 0;
+			return;
+		}
+		switch ((Math.sqrt(1 + 4 * t) - 1) & 3) {
 			case 0: x += dx; break;
 			case 1: y += dy; break;
 			case 2: x -= dx; break;
 			case 3: y -= dy; break;
 			default: throw new Error('invalid case');
 		}
-		return {
-			x: x,
-			y: y
-		};
+		t = t + 1;
+		return [x, y];
 	};
 }
 
