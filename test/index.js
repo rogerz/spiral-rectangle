@@ -1,6 +1,6 @@
 'use strict';
 
-var chai = require('chaijs/chai');
+var chai = require('chai');
 var expect = chai.expect;
 
 var lib = require('..');

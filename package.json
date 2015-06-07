@@ -1,13 +1,13 @@
 {
   "name": "spiral-rectangle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "generate a rectangle spiral",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/rogerz/spiral-rectangle/issues"
   },
-  "homepage": "https://github.com/rogerz/spiral-rectangle"
+  "homepage": "https://github.com/rogerz/spiral-rectangle",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  }
 }
